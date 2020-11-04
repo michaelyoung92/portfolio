@@ -416,7 +416,7 @@ nav {
 }
 
 .section-title {
-  margin-bottom: 0.5em;
+  margin-bottom: 2em;
   text-align: center;
 }
 
@@ -434,6 +434,12 @@ nav {
 
 .section-text {
   font-size: 1em;
+}
+
+#project-link {
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid #000;
 }
 
 /*# sourceMappingURL=styles.css.map */
