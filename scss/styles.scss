@@ -57,6 +57,10 @@ nav{
 
     li{
         font-size: 1.1em;
+
+        &:first-child{
+            color: #F9842C;
+        }
     }
 
 }
@@ -86,18 +90,25 @@ nav{
 }
 
 .section-text{
-    font-size: 1em;
+    line-height: 1.4em;
+    margin-bottom: 3em;
+
+    p{
+        margin-bottom: 1em;
+    }
 }
 
 .btn-wrapper{
-    
+    text-align: center;
 }
 
 #project-link{
-    text-align: center;
     text-transform: uppercase;
-    border-bottom: 1px solid #000;
-    
+    border-bottom: 1px solid #F9842C;
+    display: inline-block; 
+    padding-bottom: 0.5em;
+    font-weight: bold;
+    color: #F9842C;
 }
 
 
