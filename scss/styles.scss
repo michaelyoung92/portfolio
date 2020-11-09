@@ -8,6 +8,7 @@
 .container{
     width: 95%;
     margin: 0 auto;
+    max-width: 980px;
 }
 
 html,body{
@@ -18,7 +19,7 @@ html,body{
 
 //Intro Section
 #intro{
-    background-image: url("../img/intro.png");
+    background-image: url("../img/intro-sm.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 80vh;
@@ -91,6 +92,8 @@ nav{
 
 .section-text{
     line-height: 1.4em;
+    max-width: 550px;
+    margin: 0 auto;
     margin-bottom: 3em;
 
     p{
@@ -111,8 +114,30 @@ nav{
     color: #F9842C;
 }
 
+//Footer
+footer{
+    background-color: #212E32;
+    color: #fff;
 
+    .container{
+        padding: 1em 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
 
+.social-icon-links{
+    display: flex;
+
+    li{
+        margin-left: 0.8em;
+
+        i{
+            font-size: 1.6em;
+        }
+    }
+}
 
 
 

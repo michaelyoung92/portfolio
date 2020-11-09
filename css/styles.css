@@ -365,6 +365,7 @@ h1, h2, h3, h4, h5, h6 {
 .container {
   width: 95%;
   margin: 0 auto;
+  max-width: 980px;
 }
 
 html, body {
@@ -374,7 +375,7 @@ html, body {
 }
 
 #intro {
-  background-image: url("../img/intro.png");
+  background-image: url("../img/intro-sm.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 80vh;
@@ -437,6 +438,8 @@ nav {
 
 .section-text {
   line-height: 1.4em;
+  max-width: 550px;
+  margin: 0 auto;
   margin-bottom: 3em;
 }
 .section-text p {
@@ -454,6 +457,38 @@ nav {
   padding-bottom: 0.5em;
   font-weight: bold;
   color: #F9842C;
+}
+
+footer {
+  background-color: #212E32;
+  color: #fff;
+}
+footer .container {
+  padding: 1em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icon-links {
+  display: flex;
+}
+.social-icon-links li {
+  margin-left: 0.8em;
+}
+.social-icon-links li i {
+  font-size: 1.6em;
+}
+
+@media screen and (min-width: 640px) {
+  #intro {
+    background-image: url("../img/intro-md.png");
+  }
+}
+@media screen and (min-width: 980px) {
+  .social-icon-links {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

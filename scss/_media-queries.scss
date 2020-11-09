@@ -1,0 +1,19 @@
+//min-wdith 640px
+@media screen and(min-width:640px){
+    //Higher resolution intro image
+    #intro{
+        background-image: url("../img/intro-md.png");
+    }
+}
+
+//min-width 980px
+@media screen and(min-width:980px){
+    //change home page layout
+
+    //remove social icons in footer & add links
+    .social-icon-links{
+        display: none;
+    }
+
+
+}
