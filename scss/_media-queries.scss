@@ -15,5 +15,17 @@
         display: none;
     }
 
+    .social-text-links{
+        display: flex;
+
+        li{
+            margin-left: 1em;
+        }
+    }
+
+    footer .container{
+        padding: 2em 0;
+    }
+
 
 }

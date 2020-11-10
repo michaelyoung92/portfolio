@@ -480,6 +480,10 @@ footer .container {
   font-size: 1.6em;
 }
 
+.social-text-links {
+  display: none;
+}
+
 @media screen and (min-width: 640px) {
   #intro {
     background-image: url("../img/intro-md.png");
@@ -488,6 +492,17 @@ footer .container {
 @media screen and (min-width: 980px) {
   .social-icon-links {
     display: none;
+  }
+
+  .social-text-links {
+    display: flex;
+  }
+  .social-text-links li {
+    margin-left: 1em;
+  }
+
+  footer .container {
+    padding: 2em 0;
   }
 }
 
