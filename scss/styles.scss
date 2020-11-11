@@ -19,11 +19,14 @@ html,body{
 
 //Intro Section
 #intro{
-    background-image: url("../img/intro-sm.png");
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+    ), url("../img/intro-lg.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80vh;
     background-position: center center;
+    height: 80vh;
     color: #fff;
 
     .container{
@@ -76,6 +79,8 @@ nav{
 .section-title{
     margin-bottom: 2em;
     text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 
 .section-title-main{
@@ -92,9 +97,11 @@ nav{
 
 .section-text{
     line-height: 1.4em;
-    max-width: 550px;
+    max-width: 520px;
     margin: 0 auto;
     margin-bottom: 3em;
+    grid-column-start: 2;
+    grid-column-end: 4;
 
     p{
         margin-bottom: 1em;
@@ -103,6 +110,8 @@ nav{
 
 .btn-wrapper{
     text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
 #project-link{
@@ -112,6 +121,12 @@ nav{
     padding-bottom: 0.5em;
     font-weight: bold;
     color: #F9842C;
+    transition: all 0.5s ease-in-out;
+
+    &:hover{
+        color: #000;
+        border-bottom: 1px solid #000;
+    }
 }
 
 //Footer
@@ -141,6 +156,14 @@ footer{
 
 .social-text-links{
     display: none;
+
+    li{
+        transition: color 0.5s ease-in-out;
+
+        &:hover{
+            color: #F9842C;
+        }
+    }
 }
 
 

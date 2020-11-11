@@ -2,13 +2,45 @@
 @media screen and(min-width:640px){
     //Higher resolution intro image
     #intro{
-        background-image: url("../img/intro-md.png");
+        background-image: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+        ), url("../img/intro-lg.png");
+    }
+
+    //Decrease container width
+    .container{
+        width: 85%;
     }
 }
 
 //min-width 980px
 @media screen and(min-width:980px){
+    //Higher resoloution intro image
+    #intro{
+        background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        ), url("../img/intro-lg.png");
+        background-position: 50% 30%;
+    }
+
     //change home page layout
+    #home{
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            padding: 6em 0 4em 0;
+        }
+    }
+
+    .section-title{
+        text-align: center;
+    }
+
+    .section-text{
+        margin-right: 0;
+    }
 
     //remove social icons in footer & add links
     .social-icon-links{
@@ -24,7 +56,7 @@
     }
 
     footer .container{
-        padding: 2em 0;
+        padding: 1.4em 0;
     }
 
 
