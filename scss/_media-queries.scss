@@ -36,10 +36,16 @@
 
     .section-title{
         text-align: center;
+        font-size: 2em;
     }
 
     .section-text{
         margin-right: 0;
+        line-height: 1.8em;
+
+        p{
+            margin-bottom: 2.5em;
+        }
     }
 
     //remove social icons in footer & add links
