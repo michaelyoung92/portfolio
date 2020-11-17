@@ -411,7 +411,8 @@ nav {
 #nav-list li {
   font-size: 1.1em;
 }
-#nav-list li:first-child {
+
+#index-page #nav-list .index, #projects-page #nav-list .projects, #about-page #nav-list .about, #contact-page #nav-list .contact {
   color: #F9842C;
 }
 

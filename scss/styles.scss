@@ -61,12 +61,13 @@ nav{
 
     li{
         font-size: 1.1em;
-
-        &:first-child{
-            color: #F9842C;
-        }
     }
 
+}
+
+//Make active page highlight
+#index-page #nav-list .index, #projects-page #nav-list .projects, #about-page #nav-list .about, #contact-page #nav-list .contact, {
+    color: #F9842C;
 }
 
 //Home Section
