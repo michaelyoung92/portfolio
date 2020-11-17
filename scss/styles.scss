@@ -137,16 +137,19 @@ footer{
     .container{
         padding: 1em 0 2em 0;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        align-items: center;    
     }
 }
 
 .social-icon-links{
     display: flex;
+    justify-content: space-around;
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 1em;
 
     li{
-        margin-left: 0.8em;
 
         i{
             font-size: 1.6em;
@@ -166,6 +169,10 @@ footer{
     }
 }
 
+.copyright{
+    font-size: 0.8em;
+    margin-bottom: 1em;
+}
 
 
 
