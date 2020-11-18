@@ -375,7 +375,7 @@ html, body {
 }
 
 #intro {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../img/intro-lg.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../img/intro-sm.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -410,6 +410,9 @@ nav {
 }
 #nav-list li {
   font-size: 1.1em;
+}
+#nav-list li:active {
+  opacity: 0.3;
 }
 
 #index-page #nav-list .index, #projects-page #nav-list .projects, #about-page #nav-list .about, #contact-page #nav-list .contact {
@@ -457,7 +460,7 @@ nav {
   grid-column-end: 4;
 }
 
-#project-link {
+.link-btn {
   text-transform: uppercase;
   border-bottom: 1px solid #F9842C;
   display: inline-block;
@@ -466,7 +469,7 @@ nav {
   color: #F9842C;
   transition: all 0.5s ease-in-out;
 }
-#project-link:hover {
+.link-btn:hover {
   color: #000;
   border-bottom: 1px solid #000;
 }
@@ -510,7 +513,7 @@ footer .container {
 
 @media screen and (min-width: 640px) {
   #intro {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/intro-lg.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/intro-md.png");
   }
 
   .container {
