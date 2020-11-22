@@ -28,24 +28,27 @@
     //change home page layout
     #home{
         .container{
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            padding: 6em 0 4em 0;
+          display: grid;
+          grid-template-columns: repeat(4, 25%);
         }
     }
 
     .section-title{
-        text-align: center;
-        font-size: 2em;
+       grid-column: 1/2;
     }
 
     .section-text{
-        margin-right: 0;
-        line-height: 1.8em;
+        grid-column: 2/5;
+        max-width: none;
 
         p{
-            margin-bottom: 2.5em;
+            
         }
+    }
+
+    .btn-wrapper{
+        grid-column: 2/4;
+        margin-top: 2em;
     }
 
     //remove social icons in footer & add links

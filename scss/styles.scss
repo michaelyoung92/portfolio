@@ -78,14 +78,14 @@ nav{
 #home{
     .container{
         padding: 3em 0;
+        border: 1px solid pink;
     }
 }
 
 .section-title{
     margin-bottom: 2em;
     text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    border: 1px solid pink;
 }
 
 .section-title-main{
@@ -104,12 +104,13 @@ nav{
     line-height: 1.4em;
     max-width: 520px;
     margin: 0 auto;
-    margin-bottom: 3em;
-    grid-column-start: 2;
-    grid-column-end: 4;
+    border: 1px solid green;
+    display: grid;
+    justify-content: center;
 
     p{
         margin-bottom: 1em;
+        border: 1px solid blue;
     }
 }
 
@@ -178,10 +179,6 @@ footer{
     font-size: 0.8em;
     margin-bottom: 1em;
 }
-
-
-
-
 
 
 
