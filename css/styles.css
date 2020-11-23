@@ -421,13 +421,11 @@ nav {
 
 #home .container {
   padding: 3em 0;
-  border: 1px solid pink;
 }
 
 .section-title {
   margin-bottom: 2em;
   text-align: center;
-  border: 1px solid pink;
 }
 
 .section-title-main {
@@ -443,22 +441,17 @@ nav {
 }
 
 .section-text {
-  line-height: 1.4em;
+  line-height: 1.8em;
   max-width: 520px;
   margin: 0 auto;
-  border: 1px solid green;
-  display: grid;
-  justify-content: center;
 }
 .section-text p {
   margin-bottom: 1em;
-  border: 1px solid blue;
 }
 
 .btn-wrapper {
+  margin-top: 3em;
   text-align: center;
-  grid-column-start: 1;
-  grid-column-end: 4;
 }
 
 .link-btn {
@@ -529,7 +522,25 @@ footer .container {
 
   #home .container {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: repeat(4, 25%);
+    padding: 5em 0 5em 0;
+  }
+
+  .section-title {
+    grid-column: 1/2;
+    font-size: 2em;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .section-text {
+    grid-column: 2/5;
+    max-width: 600px;
+    margin-right: 0;
+    line-height: 2em;
+  }
+  .section-text p {
+    margin-bottom: 2.5em;
   }
 
   .btn-wrapper {
