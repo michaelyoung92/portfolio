@@ -414,9 +414,13 @@ nav {
 }
 #nav-list li {
   font-size: 1.1em;
+  transition: opacity 0.3s ease-in-out;
 }
 #nav-list li:active {
   opacity: 0.3;
+}
+#nav-list li:hover {
+  opacity: 0.7;
 }
 
 #index-page #nav-list .index, #projects-page #nav-list .projects, #about-page #nav-list .about, #contact-page #nav-list .contact {
@@ -448,8 +452,9 @@ nav {
 }
 
 .section-text {
-  line-height: 1.8em;
+  line-height: 1.5em;
   max-width: 520px;
+  text-align: center;
 }
 .section-text p {
   margin-bottom: 1em;
@@ -509,6 +514,17 @@ footer .container {
 .copyright {
   font-size: 0.8em;
   margin-bottom: 1em;
+}
+
+#contact-page .section-text a {
+  font-weight: bold;
+  color: #F9842C;
+}
+#contact-page footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 @media screen and (min-width: 640px) {
