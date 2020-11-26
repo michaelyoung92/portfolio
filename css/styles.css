@@ -421,6 +421,9 @@ nav {
 
 #home .container {
   padding: 3em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-title {
@@ -443,7 +446,6 @@ nav {
 .section-text {
   line-height: 1.8em;
   max-width: 520px;
-  margin: 0 auto;
 }
 .section-text p {
   margin-bottom: 1em;
@@ -522,8 +524,9 @@ footer .container {
 
   #home .container {
     display: grid;
-    grid-template-columns: repeat(4, 25%);
-    padding: 5em 0 5em 0;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 5em 0;
+    justify-items: space-between;
   }
 
   .section-title {
@@ -531,13 +534,14 @@ footer .container {
     font-size: 2em;
     text-align: left;
     margin-bottom: 0;
+    align-self: start;
   }
 
   .section-text {
     grid-column: 2/5;
     max-width: 600px;
-    margin-right: 0;
     line-height: 2em;
+    justify-self: end;
   }
   .section-text p {
     margin-bottom: 2.5em;

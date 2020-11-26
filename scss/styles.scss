@@ -78,6 +78,9 @@ nav{
 #home{
     .container{
         padding: 3em 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -101,7 +104,6 @@ nav{
 .section-text{
     line-height: 1.8em;
     max-width: 520px;
-    margin: 0 auto;
 
     p{
         margin-bottom: 1em;

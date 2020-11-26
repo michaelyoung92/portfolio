@@ -29,8 +29,9 @@
     #home{
         .container{
           display: grid;
-          grid-template-columns: repeat(4, 25%);
-          padding: 5em 0 5em 0;
+          grid-template-columns: repeat(4, 1fr);
+          padding: 5em 0;
+          justify-items: space-between;
         }
     }
 
@@ -39,13 +40,14 @@
        font-size: 2em;
        text-align: left;
        margin-bottom: 0;
+       align-self: start;
     }
 
     .section-text{
         grid-column: 2/5;
         max-width: 600px;
-        margin-right: 0;
         line-height: 2em;
+        justify-self: end;
 
         p{
             margin-bottom: 2.5em;
