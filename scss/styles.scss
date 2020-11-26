@@ -19,16 +19,6 @@ html,body{
 
 //Intro Section
 #intro{
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0.6)
-    ), url("../img/intro-sm.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 80vh;
-    color: #fff;
-
     .container{
         display: flex;
         flex-direction: column;
@@ -40,6 +30,19 @@ html,body{
     p{
         padding-bottom: 1em;
     }
+}
+
+//Home page intro
+#index-page #intro{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.6)
+    ), url("../img/intro-sm.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 80vh;
+    color: #fff;
 }
 
 #intro-title{

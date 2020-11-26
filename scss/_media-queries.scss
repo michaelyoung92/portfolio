@@ -1,7 +1,7 @@
 //min-wdith 640px
 @media screen and(min-width:640px){
     //Higher resolution intro image
-    #intro{
+    #index-page #intro{
         background-image: linear-gradient(
         rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.4)
@@ -17,7 +17,7 @@
 //min-width 980px
 @media screen and(min-width:980px){
     //Higher resoloution intro image
-    #intro{
+    #index-page #intro{
         background-image: linear-gradient(
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
