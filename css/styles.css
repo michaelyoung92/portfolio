@@ -374,6 +374,14 @@ html, body {
   background-color: #f5f5f5;
 }
 
+#intro {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../img/intro-sm.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 20vh;
+  color: #fff;
+}
 #intro .container {
   display: flex;
   flex-direction: column;
@@ -386,12 +394,7 @@ html, body {
 }
 
 #index-page #intro {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../img/intro-sm.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   height: 80vh;
-  color: #fff;
 }
 
 #intro-title {
@@ -509,7 +512,7 @@ footer .container {
 }
 
 @media screen and (min-width: 640px) {
-  #index-page #intro {
+  #intro {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/intro-md.png");
   }
 
@@ -518,7 +521,7 @@ footer .container {
   }
 }
 @media screen and (min-width: 980px) {
-  #index-page #intro {
+  #intro {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/intro-lg.png");
     background-position: 50% 30%;
   }
