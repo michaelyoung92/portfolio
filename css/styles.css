@@ -520,12 +520,6 @@ footer .container {
   font-weight: bold;
   color: #F9842C;
 }
-#contact-page footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
 
 @media screen and (min-width: 640px) {
   #intro {
