@@ -47,6 +47,7 @@
         grid-column: 2/5;
         max-width: 600px;
         line-height: 2em;
+        text-align: left;
         justify-self: end;
 
         p{
@@ -59,39 +60,24 @@
         margin-top: 2em;
     }
 
-    //remove social icons in footer & add links
-    .social-icon-links{
-        display: none;
-    }
-
-    .social-text-links{
-        display: flex;
-        order: 3;
-
-        li{
-            margin-left: 1em;
-
-            &:first-of-type{
-                margin-left: 0;
-            }
+    //Footer
+    footer{
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 20px;
         }
     }
 
-    footer .container{
-        padding: 1.4em 0;
-        flex-direction: row;
-        justify-content: space-between;
+    #social-links{
+        grid-column: 1/4;
     }
 
-    .copyright{
-        margin-bottom: 0;
-        order: 1;
+    #copyright, #location{
+        margin: 0;
     }
 
-    .location{
-        order: 2;
-        font-size: 0.9em;
+    #location{
+        grid-column: 4/5;
     }
-
-
 }

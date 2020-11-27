@@ -363,7 +363,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-  width: 95%;
+  width: 92%;
   margin: 0 auto;
   max-width: 980px;
 }
@@ -372,6 +372,8 @@ html, body {
   font-size: 1rem;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   background-color: #f5f5f5;
+  min-height: 100vh;
+  position: relative;
 }
 
 #intro {
@@ -480,40 +482,33 @@ nav {
 }
 
 footer {
-  background-color: #212E32;
-  color: #fff;
+  background-color: #fff;
+  padding: 1em 0;
+  color: #696969;
 }
-footer .container {
-  padding: 1em 0 2em 0;
+
+#social-links {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  max-width: 300px;
+}
+#social-links li {
+  margin-bottom: 0.8em;
+  font-size: 1.1em;
+}
+#social-links li:last-of-type {
+  margin-bottom: 0;
 }
 
-.social-icon-links {
-  display: flex;
-  justify-content: space-around;
-  width: 100px;
-  margin: 0 auto;
-  margin-bottom: 1em;
-}
-.social-icon-links li i {
-  font-size: 1.6em;
-}
-
-.social-text-links {
-  display: none;
-}
-.social-text-links li {
-  transition: color 0.5s ease-in-out;
-}
-.social-text-links li:hover {
-  color: #F9842C;
-}
-
-.copyright {
+#copyright {
   font-size: 0.8em;
-  margin-bottom: 1em;
+  margin-top: 2.3em;
+}
+
+#location {
+  font-size: 0.8em;
+  margin-top: 0.7em;
+  color: #F9842C;
 }
 
 #contact-page .section-text a {
@@ -555,6 +550,7 @@ footer .container {
     grid-column: 2/5;
     max-width: 600px;
     line-height: 2em;
+    text-align: left;
     justify-self: end;
   }
   .section-text p {
@@ -566,35 +562,22 @@ footer .container {
     margin-top: 2em;
   }
 
-  .social-icon-links {
-    display: none;
-  }
-
-  .social-text-links {
-    display: flex;
-    order: 3;
-  }
-  .social-text-links li {
-    margin-left: 1em;
-  }
-  .social-text-links li:first-of-type {
-    margin-left: 0;
-  }
-
   footer .container {
-    padding: 1.4em 0;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 20px;
   }
 
-  .copyright {
-    margin-bottom: 0;
-    order: 1;
+  #social-links {
+    grid-column: 1/4;
   }
 
-  .location {
-    order: 2;
-    font-size: 0.9em;
+  #copyright, #location {
+    margin: 0;
+  }
+
+  #location {
+    grid-column: 4/5;
   }
 }
 
