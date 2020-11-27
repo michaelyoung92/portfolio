@@ -31,7 +31,7 @@
           display: grid;
           grid-template-columns: repeat(4, 1fr);
           padding: 5em 0;
-          justify-items: space-between;
+          grid-column-gap: 2em;
         }
     }
 
@@ -71,6 +71,7 @@
 
     #social-links{
         grid-column: 1/4;
+        margin: 0;
     }
 
     #copyright, #location{
