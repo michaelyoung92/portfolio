@@ -25,8 +25,8 @@
         background-position: 50% 30%;
     }
 
-    //change home page layout
-    #home{
+    //change main content section layout
+    .main-content{
         .container{
           display: grid;
           grid-template-columns: repeat(4, 1fr);

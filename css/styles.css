@@ -537,7 +537,7 @@ footer {
     background-position: 50% 30%;
   }
 
-  #home .container {
+  .main-content .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 5em 0;
