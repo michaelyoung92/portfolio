@@ -515,6 +515,15 @@ footer {
   height: 80vh;
 }
 
+.project-description {
+  text-align: center;
+}
+
+.project-date {
+  font-size: 0.8em;
+  margin-bottom: 0.8em;
+}
+
 #contact-page .section-text a {
   font-weight: bold;
   color: #F9842C;
