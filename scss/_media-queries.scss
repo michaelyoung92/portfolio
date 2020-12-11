@@ -1,88 +1,23 @@
 //min-wdith 640px
 @media screen and(min-width:640px){
     //higher resolution intro image
-    #intro{
+    #main-header{
         background-image: linear-gradient(
         rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.4)
         ), url("../img/intro-md.png");
     }  
-    
-    //change project section layout
-    #project-container{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-column-gap: 2em;
-        grid-template-areas: 
-            "p1 p1 p2 p2"
-            ". p3 p3 .";
-    }
-
-    .project1{
-        grid-area: p1;
-    }
-
-    .project2{
-        grid-area: p2;
-    }
-
-    .project3{
-        grid-area: p3;
-    }
-
-    .project-title{
-        font-size: 2.5em;
-    }
-
-    .project-brief{
-        font-size: 1em;
-    }
 }
 
 //min-width 980px
 @media screen and(min-width:980px){
     //higher resoloution intro image
-    #intro{
+    #main-header{
         background-image: linear-gradient(
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
         ), url("../img/intro-lg.png");
         background-position: 50% 30%;
-    }
-
-    //change main content section layout
-    .main-content{
-        .container{
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          padding: 5em 0;
-          grid-column-gap: 2em;
-        }
-    }
-
-    .section-title{
-       grid-column: 1/2;
-       font-size: 2em;
-       text-align: left;
-       margin-bottom: 0;
-       align-self: start;
-    }
-
-    .section-text{
-        grid-column: 2/5;
-        max-width: 600px;
-        line-height: 2em;
-        text-align: left;
-        justify-self: end;
-
-        p{
-            margin-bottom: 2.5em;
-        }
-    }
-
-    .btn-wrapper{
-        grid-column: 2/4;
-        margin-top: 2em;
     }
 
     //footer
@@ -105,28 +40,5 @@
 
     #location{
         grid-column: 4/5;
-    }
-
-    //projects section
-    #projects-page{
-        .main-content{
-            .container{
-              display: flex;
-              max-width: 1380px;
-            }
-            
-            .section-title{
-                align-self: center;
-                margin-bottom: 3em;
-            }
-        }
-    }
-
-    #project-container{
-        grid-column-gap: 4em;
-    }
-
-    .project3{
-        margin-top: 3em;
     }
 }

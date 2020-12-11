@@ -365,7 +365,7 @@ h1, h2, h3, h4, h5, h6 {
 .container {
   width: 92%;
   margin: 0 auto;
-  max-width: 1380px;
+  max-width: 980px;
 }
 
 html, body {
@@ -378,7 +378,7 @@ html, body {
   justify-content: space-between;
 }
 
-#intro {
+#main-header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../img/intro-sm.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -387,18 +387,22 @@ html, body {
   height: 26vh;
   color: #fff;
 }
-#intro .container {
+#main-header .container {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   height: 100%;
   padding-bottom: 1em;
 }
-#intro p {
+#main-header p {
   padding-bottom: 1em;
 }
 
-#intro-title {
+#home #main-header {
+  height: 90vh;
+}
+
+#header-title {
   text-transform: capitalize;
 }
 
@@ -422,62 +426,6 @@ nav {
 }
 #nav-list li:hover {
   opacity: 0.7;
-}
-
-#home-page #nav-list .home, #projects-page #nav-list .projects, #about-page #nav-list .about, #contact-page #nav-list .contact {
-  color: #DDAF94;
-}
-
-.main-content .container {
-  padding: 3em 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 980px;
-}
-
-.section-title {
-  margin-bottom: 4em;
-  text-align: center;
-}
-
-.section-title-main {
-  font-size: 2.5em;
-  text-transform: capitalize;
-}
-
-.section-title-text {
-  border-left: 1px solid #000;
-  display: inline-block;
-  padding: 1em 0 0 1em;
-  margin-left: 80px;
-}
-
-.section-text {
-  line-height: 1.5em;
-  max-width: 520px;
-}
-.section-text p {
-  margin-bottom: 1em;
-}
-
-.btn-wrapper {
-  margin-top: 3em;
-  text-align: center;
-}
-
-.link-btn {
-  text-transform: uppercase;
-  border-bottom: 1px solid #DDAF94;
-  display: inline-block;
-  padding-bottom: 0.5em;
-  font-weight: bold;
-  color: #DDAF94;
-  transition: all 0.5s ease-in-out;
-}
-.link-btn:hover {
-  color: #000;
-  border-bottom: 1px solid #000;
 }
 
 footer {
@@ -516,131 +464,15 @@ footer {
   color: #DDAF94;
 }
 
-#home-page #intro {
-  height: 80vh;
-}
-
-#project-container {
-  width: 100%;
-}
-
-.project {
-  background-color: #F3F0EE;
-  border: 1px solid #e9ccbb;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  padding: 2em 2em 3em 2em;
-  border-radius: 2%;
-  margin-bottom: 3em;
-  transition: all 0.5s ease-in-out;
-}
-.project:hover {
-  background-color: #DDAF94;
-}
-.project:last-of-type {
-  margin-bottom: 0;
-}
-.project i {
-  position: absolute;
-  top: 0.8em;
-  right: 0.8em;
-  transform: rotate(45deg);
-}
-
-.project-img {
-  max-width: 420px;
-  border-radius: 2%;
-  margin-top: 3em;
-}
-
-.project-title {
-  font-size: 2em;
-  margin-bottom: 0.2em;
-}
-
-.project-brief {
-  font-size: 0.9em;
-  text-align: center;
-}
-
-#contact-page .section-text a {
-  font-weight: bold;
-  color: #DDAF94;
-}
-#contact-page .section-text p {
-  margin-bottom: 1em;
-}
-
 @media screen and (min-width: 640px) {
-  #intro {
+  #main-header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/intro-md.png");
-  }
-
-  #project-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 2em;
-    grid-template-areas: "p1 p1 p2 p2" ". p3 p3 .";
-  }
-
-  .project1 {
-    grid-area: p1;
-  }
-
-  .project2 {
-    grid-area: p2;
-  }
-
-  .project3 {
-    grid-area: p3;
-  }
-
-  .project-title {
-    font-size: 2.5em;
-  }
-
-  .project-brief {
-    font-size: 1em;
   }
 }
 @media screen and (min-width: 980px) {
-  #intro {
+  #main-header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/intro-lg.png");
     background-position: 50% 30%;
-  }
-
-  .main-content .container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 5em 0;
-    grid-column-gap: 2em;
-  }
-
-  .section-title {
-    grid-column: 1/2;
-    font-size: 2em;
-    text-align: left;
-    margin-bottom: 0;
-    align-self: start;
-  }
-
-  .section-text {
-    grid-column: 2/5;
-    max-width: 600px;
-    line-height: 2em;
-    text-align: left;
-    justify-self: end;
-  }
-  .section-text p {
-    margin-bottom: 2.5em;
-  }
-
-  .btn-wrapper {
-    grid-column: 2/4;
-    margin-top: 2em;
   }
 
   footer .container {
@@ -660,23 +492,6 @@ footer {
 
   #location {
     grid-column: 4/5;
-  }
-
-  #projects-page .main-content .container {
-    display: flex;
-    max-width: 1380px;
-  }
-  #projects-page .main-content .section-title {
-    align-self: center;
-    margin-bottom: 3em;
-  }
-
-  #project-container {
-    grid-column-gap: 4em;
-  }
-
-  .project3 {
-    margin-top: 3em;
   }
 }
 
