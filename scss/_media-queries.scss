@@ -7,6 +7,35 @@
         rgba(0, 0, 0, 0.4)
         ), url("../img/intro-md.png");
     }  
+
+     //home page
+     #intro{
+        .container{
+            align-items: flex-start;
+            max-width: 700px;
+        }
+    }
+
+    #intro-heading{
+        font-size: 3.5em;
+    }
+
+    #intro-sub-heading{
+        font-size: 2.2em;
+    }
+
+    #intro-text{
+        text-align: left;
+        font-size: 1.3em;
+        line-height: 1.9em;
+        max-width: 650px;
+    }
+
+    .btn-link{
+        a{
+            font-size: 1.2em;
+        }
+    }
 }
 
 //min-width 980px
@@ -19,6 +48,7 @@
         ), url("../img/intro-lg.png");
         background-position: 50% 30%;
     }
+
 
     //footer
     footer{

@@ -84,6 +84,26 @@ nav{
 
 }
 
+#home .home, #projects .projects, #about .about, #contact .contact{
+    color: $accentColor;
+}
+
+//button link
+.btn-link{
+
+    margin-top: 5em;
+
+    a{
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: color 0.5s ease;
+
+        &:hover{
+            color: $accentColor;
+        }
+    }
+}
+
 //footer
 footer{
     background-color: #f5f5f5;
@@ -126,8 +146,41 @@ footer{
 
 //*********** end of all pages styling *************************
 
+//home page
 
+#intro{
 
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 7em 0;
+    }
+}
+
+#intro-heading{
+    font-size: 2.5em;
+    text-transform: capitalize;
+    margin-bottom: 0.5em;
+    font-weight: normal;
+}
+
+#intro-sub-heading{
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-bottom: 2em;
+
+    span{
+        color: $accentColor;
+    }
+}
+
+#intro-text{
+    font-size: 1.1em;
+    line-height: 1.7em;
+    max-width: 500px;
+}
 
 
 
