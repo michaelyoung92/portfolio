@@ -1,17 +1,16 @@
 //min-wdith 640px
 @media screen and(min-width:640px){
     //higher resolution intro image
-    #main-header{
-        background-image: linear-gradient(
-        rgba(0, 0, 0, 0.4),
-        rgba(0, 0, 0, 0.4)
-        ), url("../img/intro-md.png");
-    }  
+    // #main-header{
+    //     background-image: linear-gradient(
+    //     rgba(0, 0, 0, 0.4),
+    //     rgba(0, 0, 0, 0.4)
+    //     ), url("../img/intro-md.png");
+    // }  
 
      //home page
      #intro{
         .container{
-            align-items: flex-start;
             max-width: 700px;
         }
     }
@@ -25,7 +24,6 @@
     }
 
     #intro-text{
-        text-align: left;
         font-size: 1.3em;
         line-height: 1.9em;
         max-width: 650px;
@@ -41,13 +39,13 @@
 //min-width 980px
 @media screen and(min-width:980px){
     //higher resoloution intro image
-    #main-header{
-        background-image: linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-        ), url("../img/intro-lg.png");
-        background-position: 50% 30%;
-    }
+    // #main-header{
+    //     background-image: linear-gradient(
+    //     rgba(0, 0, 0, 0.5),
+    //     rgba(0, 0, 0, 0.5)
+    //     ), url("../img/intro-lg.png");
+    //     background-position: 50% 30%;
+    // }
 
 
     //footer
