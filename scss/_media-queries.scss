@@ -1,17 +1,10 @@
 //min-wdith 640px
 @media screen and(min-width:640px){
-    //higher resolution intro image
-    // #main-header{
-    //     background-image: linear-gradient(
-    //     rgba(0, 0, 0, 0.4),
-    //     rgba(0, 0, 0, 0.4)
-    //     ), url("../img/intro-md.png");
-    // }  
-
      //home page
      #intro{
         .container{
             max-width: 700px;
+            padding: 7em 0;
         }
     }
 
@@ -38,15 +31,42 @@
 
 //min-width 980px
 @media screen and(min-width:980px){
-    //higher resoloution intro image
-    // #main-header{
-    //     background-image: linear-gradient(
-    //     rgba(0, 0, 0, 0.5),
-    //     rgba(0, 0, 0, 0.5)
-    //     ), url("../img/intro-lg.png");
-    //     background-position: 50% 30%;
-    // }
 
+    //align nav to right
+    #main-header{
+        .container{
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    #nav-list{
+        li{
+            margin-left: 1.5em;
+        }
+    }
+
+    //align main content to left
+    .main-content{
+        .container{
+            align-items: flex-start;
+        }
+    }
+
+    #intro-heading{
+        font-size: 3.5em;
+    }
+
+    #intro-sub-heading{
+        font-size: 2em;
+    }
+
+    .main-text{
+        text-align: left;
+        font-size: 1.5em;
+        max-width: 700px;
+    }
 
     //footer
     footer{

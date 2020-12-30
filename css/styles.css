@@ -426,6 +426,9 @@ nav {
   color: #DDAF94;
 }
 
+.btn-link {
+  margin-top: 5em;
+}
 .btn-link a {
   text-transform: uppercase;
   font-weight: bold;
@@ -435,6 +438,26 @@ nav {
 }
 .btn-link a:hover {
   color: #DDAF94;
+}
+
+.main-content .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5em 0;
+}
+
+.section-title {
+  font-size: 3em;
+  text-transform: capitalize;
+  margin-bottom: 1em;
+}
+
+.main-text {
+  font-size: 1.1em;
+  line-height: 1.7em;
+  max-width: 500px;
 }
 
 footer {
@@ -475,14 +498,6 @@ footer .container {
   color: #DDAF94;
 }
 
-#intro .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 7em 0;
-}
-
 #intro-heading {
   font-size: 2.5em;
   text-transform: capitalize;
@@ -499,19 +514,14 @@ footer .container {
   color: #DDAF94;
 }
 
-#intro-text {
-  font-size: 1.1em;
-  line-height: 1.7em;
-  max-width: 500px;
-}
-
-.btn-link {
-  margin-top: 5em;
+#about .main-text:first-of-type {
+  margin-bottom: 2em;
 }
 
 @media screen and (min-width: 640px) {
   #intro .container {
     max-width: 700px;
+    padding: 7em 0;
   }
 
   #intro-heading {
@@ -533,6 +543,34 @@ footer .container {
   }
 }
 @media screen and (min-width: 980px) {
+  #main-header .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #nav-list li {
+    margin-left: 1.5em;
+  }
+
+  .main-content .container {
+    align-items: flex-start;
+  }
+
+  #intro-heading {
+    font-size: 3.5em;
+  }
+
+  #intro-sub-heading {
+    font-size: 2em;
+  }
+
+  .main-text {
+    text-align: left;
+    font-size: 1.5em;
+    max-width: 700px;
+  }
+
   footer .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
