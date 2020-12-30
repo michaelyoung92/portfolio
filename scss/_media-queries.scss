@@ -35,9 +35,9 @@
     //align nav to right
     #main-header{
         .container{
+            align-items: center;
             flex-direction: row;
             justify-content: space-between;
-            align-items: center;
         }
     }
 
@@ -63,30 +63,31 @@
     }
 
     .main-text{
-        text-align: left;
         font-size: 1.5em;
         max-width: 700px;
+        text-align: left;
     }
 
     //footer
     footer{
         .container{
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-auto-rows: 20px;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0;
         }
     }
 
     #social-links{
-        grid-column: 1/4;
         margin: 0;
+
+        li{
+            margin: 0;
+        }
     }
 
-    #copyright, #location{
+    #copyright{
         margin: 0;
-    }
-
-    #location{
-        grid-column: 4/5;
     }
 }
