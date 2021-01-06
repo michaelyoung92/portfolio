@@ -514,7 +514,7 @@ footer .container {
   color: #DDAF94;
 }
 
-#about .main-text:first-of-type {
+#about .main-text:first-of-type, #contact .main-text:first-of-type {
   margin-bottom: 2em;
 }
 
