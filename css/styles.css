@@ -459,6 +459,9 @@ nav {
   line-height: 1.7em;
   max-width: 500px;
 }
+.main-text a {
+  color: #DDAF94;
+}
 
 footer {
   color: #576978;
