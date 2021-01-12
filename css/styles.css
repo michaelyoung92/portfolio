@@ -364,7 +364,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
   margin: 0 auto;
-  max-width: 980px;
+  max-width: 1080px;
   width: 92%;
 }
 
@@ -476,11 +476,10 @@ footer .container {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  width: 300px;
+  width: 120px;
 }
 #social-links li {
-  font-size: 1.1em;
-  margin-bottom: 0.8em;
+  font-size: 1.5em;
   transition: color 0.5s ease-in-out;
 }
 #social-links li:hover {
@@ -584,13 +583,15 @@ footer .container {
 
   #social-links {
     margin: 0;
+    order: 2;
   }
-  #social-links w li {
+  #social-links li {
     margin: 0;
   }
 
   #copyright {
     margin: 0;
+    order: 1;
   }
 }
 

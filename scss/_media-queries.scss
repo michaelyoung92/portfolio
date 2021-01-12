@@ -81,7 +81,8 @@
 
     #social-links{
         margin: 0;
-w
+        order: 2;
+
         li{
             margin: 0;
         }
@@ -89,5 +90,6 @@ w
 
     #copyright{
         margin: 0;
+        order: 1;
     }
 }
